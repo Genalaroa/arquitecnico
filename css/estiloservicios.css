@@ -1,0 +1,69 @@
+
+.gestiones{
+    margin-top: 50px;
+    margin-left: 50px;
+    background-color: #f7ede0;
+    border-style: none;
+
+    
+}
+.card-body {
+    background-color: #f7ede0;
+
+
+}
+
+.card{
+    background-color: #f7ede0;
+    border-style: none;
+    color: #361500
+    
+}
+
+.card-header{
+    background-color: rgb(169, 113, 85, 0.2);
+}
+ 
+
+.btn-link{
+    color: #361500;
+}
+
+.david{
+    justify-content: center;
+    color: #361500;
+
+}
+.david img{
+    text-align: center;
+    margin-left: 15% ;
+}
+
+.davidq{
+    justify-content: center;
+    color: #361500;
+
+}
+
+.davidq img{
+    text-align: center;
+
+}
+
+
+.testimonio{
+    display: flex;
+    flex-direction: column;
+    border: 3px solid #361500;
+    padding: 12px;
+    margin: 50px;
+    margin-left: 8%;
+
+}
+
+.testimonio h2{
+    text-align: center;
+}
+
+
+
