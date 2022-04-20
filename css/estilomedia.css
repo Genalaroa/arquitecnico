@@ -32,6 +32,91 @@
     background-color:rgb(84 69 64);
 }
 
+.navbar{
+    margin: 80px ;
+    
+}
+
+
+#logo h4{
+    margin-left: 45px;
+}
+
+}
+
+@media screen and (max-width: 375px){
+
+  #logo img{
+      width: 95px;
+      height: 95px;
+  }
+  #logo h4{
+      font-size: 20px;
+      margin-left: 22px;
+  }
+  .serviciosdestacados{
+    margin-left: -40px;
+  }
+  
+  .grid-containercontacto{
+    margin-left: -40px;
+  }
+  .navbar{
+    margin: 45px;
+  }
+  
+  }
+
+@media screen and (max-width: 411px){
+
+#logo img{
+    width: 95px;
+    height: 95px;
+}
+#logo h4{
+    font-size: 20px;
+    margin-left: 22px;
+}
+.serviciosdestacados{
+  margin-left: -40px;
+}
+
+.grid-containercontacto{
+  margin-left: -40px;
+}
+.navbar{
+  margin: 60px;
+}
+
+}
+
+
+@media screen and (max-width: 360px){
+
+    #logo img{
+        width: 95px;
+        height: 95px;
+    }
+    #logo h4{
+        font-size: 20px;
+        margin-left: 22px;
+    }
+    .navbar{
+        
+        margin: 50px;
+        padding: 0px;
+        justify-content: end;
+        text-align: center;
+    }
+    .serviciosdestacados{
+      margin-left: 0%;
+    }
+    .grid-containercontacto{
+      margin-left: 0px;
+    }
+    
+    }
+
 
 
 /* servicios */
@@ -69,10 +154,6 @@
     }
 
 
-
-
-
-}
 @media screen and (max-width: 600px){
     
     .grid-containergaleria{

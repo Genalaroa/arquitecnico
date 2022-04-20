@@ -1,7 +1,17 @@
 
+.table h3{
+  text-align: center;
+
+}
 .table{
     flex-direction: row;
+    margin-top: 20px;
 }
+
+.table h3{
+  text-align: center;
+}
+
 .sobremi{
     text-align: justify;
 

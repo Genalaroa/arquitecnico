@@ -1,404 +1,801 @@
 <!DOCTYPE html>
 <html lang="ES-ES">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Fredoka:wdth,wght@99.3,564&family=Mukta&family=Roboto+Slab:wght@100;400;500&family=Smooch+Sans:wght@300&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="/css/estiloindex.css">
-	<link rel="stylesheet" href="/css/estiloservicios.css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css"
+      integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+      crossorigin="anonymous"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Fredoka:wdth,wght@99.3,564&family=Mukta&family=Roboto+Slab:wght@100;400;500&family=Smooch+Sans:wght@300&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="/css/estiloindex.css" />
+    <link rel="stylesheet" href="/css/estiloservicios.css" />
     <title>DAVID GARCIA CALVO</title>
+  </head>
 
-</head>
+  <script>
+    window.onresize = function (event) {
+      var mediaQuery = window.matchMedia("(max-width: 1200px)");
 
+      var mediaQuery800 = window.matchMedia("(max-width: 800px)");
+      // Check if the media query is true
+      if (mediaQuery.matches == true) {
+        document.getElementById("accordion").classList.add("col-lg-12");
+        document.getElementById("accordion").classList.remove("col-lg-8");
 
-<script>
-	window.onresize = function(event) {
-		var mediaQuery = window.matchMedia('(max-width: 1200px)');
-	
-		var mediaQuery800 = window.matchMedia('(max-width: 800px)');
-					// Check if the media query is true
-					if (mediaQuery.matches==true) {
-					
-						document.getElementById('accordion').classList.add("col-lg-12");
-						document.getElementById('accordion').classList.remove("col-lg-8");
+        document.getElementById("opinion").classList.add("col-lg-10");
+        document.getElementById("opinion").classList.remove("col-lg-2");
+      } else {
+        document.getElementById("accordion").classList.add("col-lg-8");
+        document.getElementById("accordion").classList.remove("col-lg-12");
 
-						document.getElementById('opinion').classList.add("col-lg-10");
-						document.getElementById('opinion').classList.remove("col-lg-2");
-			
-					}
-                    else {
-	
-						document.getElementById('accordion').classList.add("col-lg-8");
-						document.getElementById('accordion').classList.remove("col-lg-12");
+        document.getElementById("opinion").classList.add("col-lg-2");
+        document.getElementById("opinion").classList.remove("col-lg-10");
+      }
+    };
+  </script>
 
-						document.getElementById('opinion').classList.add("col-lg-2");
-						document.getElementById('opinion').classList.remove("col-lg-10");
-	
-					
-					}
-
-
-		
-	
-	};
-</script>
-
-
-<body>
-
-<div class="row" id="serviciocompleto">
-    <div class=" gestiones col-lg-8 col-md-12 col-sm-12 col-xs-12" id="accordion">
+  <body>
+    <div class="row" id="serviciocompleto">
+      <div
+        class="gestiones col-lg-8 col-md-12 col-sm-12 col-xs-12"
+        id="accordion"
+      >
         <div class="card">
-            <div class="card-header" id="headingOne">
-                <h4 class="mb-0">
-                    <button class="btn btn-link" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
-                        GESTIONES INMOBILIARIAS
-                    </button>
-                </h4>
-            </div>
-            <div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#accordion">
-                <div class="card-body">                    
-					<div id="accordion1">
-						<div class="card">
-							<div class="card-header" id="headingOne">
-								<h5 class="mb-0">
-									<button class="btn btn-link" data-toggle="collapse" data-target="#collapseOne11" aria-expanded="true" aria-controls="collapseOne11">
-										 Certificado deficiencia energetica
-								    </button>
-								</h5>
-							</div>
-							<div id="collapseOne11" class="collapse" aria-labelledby="headingOne" data-parent="#accordion1">
-								<div class="card-body">
-									El certificado energético informa sobre el consumo energético y sobre las emisiones de CO2 de un inmueble que se anuncia en venta o en alquiler. El contenido del certificado energético se resume en la etiqueta energética. Es una etiqueta que indica las calificaciones de emisiones y de consumo que el inmueble ha obtenido en su certificado energético, en una escala de colores que va de la A, la más eficiente, a la G, la menos eficiente.
-								</div>
-							</div>
-						</div>
-						<div class="card">
-							<div class="card-header" id="headingOne">
-								<h5 class="mb-0">
-									<button class="btn btn-link" data-toggle="collapse" data-target="#collapseOne12" aria-expanded="true" aria-controls="collapseOne12">
-										Medición de fincas (casas, apartamentos y locales comerciales)
-									</button>
-								</h5>
-							</div>
-							<div id="collapseOne12" class="collapse" aria-labelledby="headingOne" data-parent="#accordion1">
-								<div class="card-body">
-								    Lorem ipsum dolor sit amet consectetur, adipisicing elit. Repellat officiis quisquam commodi animi aliquam, doloremque odio molestias consectetur repellendus, hic deleniti dicta numquam voluptatem aut, eius quasi! Cupiditate, ducimus commodi!
-								</div>
-							</div>
-					</div>
-					<div class="card">
-							<div class="card-header" id="headingOne">
-								<h5 class="mb-0">
-									<button class="btn btn-link" data-toggle="collapse" data-target="#collapseOne13" aria-expanded="true" aria-controls="collapseOne13">
-										Certificado de antiguedad
-									</button>
-								</h5>
-							</div>
-							<div id="collapseOne13" class="collapse" aria-labelledby="headingOne" data-parent="#accordion1">
-								<div class="card-body">
-								    Lorem ipsum dolor sit amet consectetur, adipisicing elit. Repellat officiis quisquam commodi animi aliquam, doloremque odio molestias consectetur repellendus, hic deleniti dicta numquam voluptatem aut, eius quasi! Cupiditate, ducimus commodi!
-								</div>
-							</div>
-						</div>
-						<div class="card">
-							<div class="card-header" id="headingOne">
-								<h5 class="mb-0">
-									<button class="btn btn-link" data-toggle="collapse" data-target="#collapseOne14" aria-expanded="true" aria-controls="collapseOne14">
-										Tasasiones inmobiliarias
-									</button>
-								</h5>
-							</div>
-							<div id="collapseOne14" class="collapse" aria-labelledby="headingOne" data-parent="#accordion1">
-								<div class="card-body">
-								   Lorem ipsum dolor sit amet consectetur, adipisicing elit. Repellat officiis quisquam commodi animi aliquam, doloremque odio molestias consectetur repellendus, hic deleniti dicta numquam voluptatem aut, eius quasi! Cupiditate, ducimus commodi!
-								</div>
-							</div>
-						</div>
-					</div>
-                    </div>
-            </div>
-        </div>
-        <div class="card">
-            <div class="card-header" id="headingTwo">
-                <h4 class="mb-0">
-                    <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
-                        GESTIONES CATASTRALES
+          <div class="card-header" id="headingOne">
+            <h4 class="mb-0">
+              <button
+                class="btn btn-link"
+                data-toggle="collapse"
+                data-target="#collapseOne"
+                aria-expanded="true"
+                aria-controls="collapseOne"
+              >
+                GESTIONES INMOBILIARIAS
+              </button>
+            </h4>
+          </div>
+          <div
+            id="collapseOne"
+            class="collapse show"
+            aria-labelledby="headingOne"
+            data-parent="#accordion"
+          >
+            <div class="card-body">
+              <div id="accordion1">
+                <div class="card">
+                  <div class="card-header" id="headingOne">
+                    <h5 class="mb-0">
+                      <button
+                        class="btn btn-link"
+                        data-toggle="collapse"
+                        data-target="#collapseOne11"
+                        aria-expanded="true"
+                        aria-controls="collapseOne11"
+                      >
+                        Certificado deficiencia energetica
                       </button>
-                </h4>
-            </div>
-            <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordion">
-                <div class="card-body">
-                    <div id="accordion2">
-                        <div class="card">
-                            <div class="card-header" id="headingOne">
-                                <h5 class="mb-0">
-                                    <button class="btn btn-link" data-toggle="collapse" data-target="#collapseOne1" aria-expanded="true" aria-controls="collapseOne1">
-                                    Certificado deficiencia energetica
-                                  </button>
-                                </h5>
-                            </div>
-                            <div id="collapseOne1" class="collapse" aria-labelledby="headingOne" data-parent="#accordion2">
-                                <div class="card-body">
-                                  Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
-                                </div>
-                            </div>
-                        </div>
-                        <div class="card">
-                            <div class="card-header" id="headingOne">
-                                <h5 class="mb-0">
-                                    <button class="btn btn-link" data-toggle="collapse" data-target="#collapseOne2" aria-expanded="true" aria-controls="collapseOne2">
-                                        Medición de fincas (casas, apartamentos y locales comerciales)
-                                    </button>
-                                </h5>
-                            </div>
-                            <div id="collapseOne2" class="collapse" aria-labelledby="headingOne" data-parent="#accordion2">
-                                <div class="card-body">
-                                   Lorem ipsum dolor sit amet consectetur, adipisicing elit. Repellat officiis quisquam commodi animi aliquam, doloremque odio molestias consectetur repellendus, hic deleniti dicta numquam voluptatem aut, eius quasi! Cupiditate, ducimus commodi!
-                                </div>
-                            </div>
+                    </h5>
+                  </div>
+                  <div
+                    id="collapseOne11"
+                    class="collapse"
+                    aria-labelledby="headingOne"
+                    data-parent="#accordion1"
+                  >
+                    <div class="card-body">
+                      El certificado energético informa sobre el consumo
+                      energético y sobre las emisiones de CO2 de un inmueble que
+                      se anuncia en venta o en alquiler. El contenido del
+                      certificado energético se resume en la etiqueta
+                      energética. Es una etiqueta que indica las calificaciones
+                      de emisiones y de consumo que el inmueble ha obtenido en
+                      su certificado energético, en una escala de colores que va
+                      de la A, la más eficiente, a la G, la menos eficiente.
                     </div>
-					<div class="card">
-                            <div class="card-header" id="headingOne">
-                                <h5 class="mb-0">
-                                    <button class="btn btn-link" data-toggle="collapse" data-target="#collapseOne3" aria-expanded="true" aria-controls="collapseOne3">
-										Certificado de antiguedad
-                                    </button>
-                                </h5>
-                            </div>
-                            <div id="collapseOne3" class="collapse" aria-labelledby="headingOne" data-parent="#accordion2">
-                                <div class="card-body">
-                                   Lorem ipsum dolor sit amet consectetur, adipisicing elit. Repellat officiis quisquam commodi animi aliquam, doloremque odio molestias consectetur repellendus, hic deleniti dicta numquam voluptatem aut, eius quasi! Cupiditate, ducimus commodi!
-                                </div>
-                            </div>
-                        </div>
-						<div class="card">
-                            <div class="card-header" id="headingOne">
-                                <h5 class="mb-0">
-                                    <button class="btn btn-link" data-toggle="collapse" data-target="#collapseOne4" aria-expanded="true" aria-controls="collapseOne4">
-										Tasasiones inmobiliarias
-                                    </button>
-                                </h5>
-                            </div>
-                            <div id="collapseOne4" class="collapse" aria-labelledby="headingOne" data-parent="#accordion2">
-                                <div class="card-body">
-                                   Lorem ipsum dolor sit amet consectetur, adipisicing elit. Repellat officiis quisquam commodi animi aliquam, doloremque odio molestias consectetur repellendus, hic deleniti dicta numquam voluptatem aut, eius quasi! Cupiditate, ducimus commodi!
-                                </div>
-                            </div>
-                        </div>
-                    </div>
+                  </div>
                 </div>
+                <div class="card">
+                  <div class="card-header" id="headingOne">
+                    <h5 class="mb-0">
+                      <button
+                        class="btn btn-link"
+                        data-toggle="collapse"
+                        data-target="#collapseOne12"
+                        aria-expanded="true"
+                        aria-controls="collapseOne12"
+                      >
+                        Medición de fincas (casas, apartamentos y locales
+                        comerciales)
+                      </button>
+                    </h5>
+                  </div>
+                  <div
+                    id="collapseOne12"
+                    class="collapse"
+                    aria-labelledby="headingOne"
+                    data-parent="#accordion1"
+                  >
+                    <div class="card-body">
+                      Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                      Repellat officiis quisquam commodi animi aliquam,
+                      doloremque odio molestias consectetur repellendus, hic
+                      deleniti dicta numquam voluptatem aut, eius quasi!
+                      Cupiditate, ducimus commodi!
+                    </div>
+                  </div>
+                </div>
+                <div class="card">
+                  <div class="card-header" id="headingOne">
+                    <h5 class="mb-0">
+                      <button
+                        class="btn btn-link"
+                        data-toggle="collapse"
+                        data-target="#collapseOne13"
+                        aria-expanded="true"
+                        aria-controls="collapseOne13"
+                      >
+                        Certificado de antiguedad
+                      </button>
+                    </h5>
+                  </div>
+                  <div
+                    id="collapseOne13"
+                    class="collapse"
+                    aria-labelledby="headingOne"
+                    data-parent="#accordion1"
+                  >
+                    <div class="card-body">
+                      Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                      Repellat officiis quisquam commodi animi aliquam,
+                      doloremque odio molestias consectetur repellendus, hic
+                      deleniti dicta numquam voluptatem aut, eius quasi!
+                      Cupiditate, ducimus commodi!
+                    </div>
+                  </div>
+                </div>
+                <div class="card">
+                  <div class="card-header" id="headingOne">
+                    <h5 class="mb-0">
+                      <button
+                        class="btn btn-link"
+                        data-toggle="collapse"
+                        data-target="#collapseOne14"
+                        aria-expanded="true"
+                        aria-controls="collapseOne14"
+                      >
+                        Tasasiones inmobiliarias
+                      </button>
+                    </h5>
+                  </div>
+                  <div
+                    id="collapseOne14"
+                    class="collapse"
+                    aria-labelledby="headingOne"
+                    data-parent="#accordion1"
+                  >
+                    <div class="card-body">
+                      Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                      Repellat officiis quisquam commodi animi aliquam,
+                      doloremque odio molestias consectetur repellendus, hic
+                      deleniti dicta numquam voluptatem aut, eius quasi!
+                      Cupiditate, ducimus commodi!
+                    </div>
+                  </div>
+                </div>
+              </div>
             </div>
+          </div>
         </div>
         <div class="card">
-            <div class="card-header" id="headingThree">
-                <h5 class="mb-0">
-                    <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
-                        GESTIONES URBANISTICAS
+          <div class="card-header" id="headingTwo">
+            <h4 class="mb-0">
+              <button
+                class="btn btn-link collapsed"
+                data-toggle="collapse"
+                data-target="#collapseTwo"
+                aria-expanded="false"
+                aria-controls="collapseTwo"
+              >
+                GESTIONES CATASTRALES
+              </button>
+            </h4>
+          </div>
+          <div
+            id="collapseTwo"
+            class="collapse"
+            aria-labelledby="headingTwo"
+            data-parent="#accordion"
+          >
+            <div class="card-body">
+              <div id="accordion2">
+                <div class="card">
+                  <div class="card-header" id="headingOne">
+                    <h5 class="mb-0">
+                      <button
+                        class="btn btn-link"
+                        data-toggle="collapse"
+                        data-target="#collapseOne1"
+                        aria-expanded="true"
+                        aria-controls="collapseOne1"
+                      >
+                        Certificado deficiencia energetica
                       </button>
-                </h5>
-            </div>
-            <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordion">
-                <div class="card-body">
-					<div id="accordion3">
-						<div class="card">
-							<div class="card-header" id="headingOne">
-								<h5 class="mb-0">
-									<button class="btn btn-link" data-toggle="collapse" data-target="#collapseOne111" aria-expanded="true" aria-controls="collapseOne111">
-									Cedulas de habitabilidad
-								  </button>
-								</h5>
-							</div>
-							<div id="collapseOne111" class="collapse" aria-labelledby="headingOne" data-parent="#accordion3">
-								<div class="card-body">
-									La cédula de habitabilidad es el documento administrativo que ratifica que una vivienda reúne las condiciones básicas para ser habitada, sin perjuicio de que en la misma se realicen otras actividades debidamente autorizadas. Deben cumplir unas condiciones basicas que dependera de la comunidad autónoma en la que se encuentre y del año de construcción. Pero los datos concretos que se miden son la superficie útil mínima de la vivienda y de las diferentes estancias, la altura libre, los huecos y las dotaciones mínimas.
-									<h6> Existen tres tipos de cédulas en función de la antigüedad del inmueble </h6>
-									<li>Cédula de primera ocupación: corresponden a las viviendas de nueva construcción, es decir, es la cédula de habitabilidad en vivienda nueva.</li>
-									<li>Cédula de segunda ocupación: se refiere a las viviendas que ya existen. Corresponde a la renovación de la cédula de primera ocupación y, por consiguiente, se trata de la cédula de habitabilidad en vivienda antigua.</li>
-									<li>Cédula de primera ocupación de rehabilitación: para aquellas viviendas en las que se ha realizado una rehabilitación de la misma.</li>
-								</div>
-							</div>
-						</div>
-						<div class="card">
-							<div class="card-header" id="headingOne">
-								<h5 class="mb-0">
-									<button class="btn btn-link" data-toggle="collapse" data-target="#collapseOne123" aria-expanded="true" aria-controls="collapseOne123">
-									Declaraciones responsables
-									</button>
-								</h5>
-							</div>
-							<div id="collapseOne123" class="collapse" aria-labelledby="headingOne" data-parent="#accordion3">
-								<div class="card-body">
-								   Lorem ipsum dolor sit amet consectetur, adipisicing elit. Repellat officiis quisquam commodi animi aliquam, doloremque odio molestias consectetur repellendus, hic deleniti dicta numquam voluptatem aut, eius quasi! Cupiditate, ducimus commodi!
-								</div>
-							</div>
-					</div>
-					<div class="card">
-							<div class="card-header" id="headingOne">
-								<h5 class="mb-0">
-									<button class="btn btn-link" data-toggle="collapse" data-target="#collapseOne132" aria-expanded="true" aria-controls="collapseOne132">
-									Comunicación previa de obras e instalaciones
-									</button>
-								</h5>
-							</div>
-							<div id="collapseOne132" class="collapse" aria-labelledby="headingOne" data-parent="#accordion3">
-								<div class="card-body">
-								   Lorem ipsum dolor sit amet consectetur, adipisicing elit. Repellat officiis quisquam commodi animi aliquam, doloremque odio molestias consectetur repellendus, hic deleniti dicta numquam voluptatem aut, eius quasi! Cupiditate, ducimus commodi!
-								</div>
-							</div>
-						</div>
-						<div class="card">
-							<div class="card-header" id="headingOne">
-								<h5 class="mb-0">
-									<button class="btn btn-link" data-toggle="collapse" data-target="#collapseOne143" aria-expanded="true" aria-controls="collapseOne143">
-									Comunicación previa de primera ocupación
-									</button>
-								</h5>
-							</div>
-							<div id="collapseOne143" class="collapse" aria-labelledby="headingOne" data-parent="#accordion3">
-								<div class="card-body">
-								   Lorem ipsum dolor sit amet consectetur, adipisicing elit. Repellat officiis quisquam commodi animi aliquam, doloremque odio molestias consectetur repellendus, hic deleniti dicta numquam voluptatem aut, eius quasi! Cupiditate, ducimus commodi!
-								</div>
-							</div>
-						</div>
-						<div class="card">
-							<div class="card-header" id="headingOne">
-								<h5 class="mb-0">
-									<button class="btn btn-link" data-toggle="collapse" data-target="#collapseOne142" aria-expanded="true" aria-controls="collapseOne142">
-									Lincencias de obra menor
-									</button>
-								</h5>
-							</div>
-							<div id="collapseOne142" class="collapse" aria-labelledby="headingOne" data-parent="#accordion3">
-								<div class="card-body">
-								   Lorem ipsum dolor sit amet consectetur, adipisicing elit. Repellat officiis quisquam commodi animi aliquam, doloremque odio molestias consectetur repellendus, hic deleniti dicta numquam voluptatem aut, eius quasi! Cupiditate, ducimus commodi!
-								</div>
-							</div>
-						</div>
-						<div class="card">
-							<div class="card-header" id="headingOne">
-								<h5 class="mb-0">
-									<button class="btn btn-link" data-toggle="collapse" data-target="#collapseOne144" aria-expanded="true" aria-controls="collapseOne144">
-									Proyectos de legalicación y obra nueva
-									</button>
-								</h5>
-							</div>
-							<div id="collapseOne144" class="collapse" aria-labelledby="headingOne" data-parent="#accordion3">
-								<div class="card-body">
-								   Lorem ipsum dolor sit amet consectetur, adipisicing elit. Repellat officiis quisquam commodi animi aliquam, doloremque odio molestias consectetur repellendus, hic deleniti dicta numquam voluptatem aut, eius quasi! Cupiditate, ducimus commodi!
-								</div>
-							</div>
-						</div>
-						<div class="card">
-							<div class="card-header" id="headingOne">
-								<h5 class="mb-0">
-									<button class="btn btn-link" data-toggle="collapse" data-target="#collapseOne145" aria-expanded="true" aria-controls="collapseOne145">
-									Licencia de apertura de actividades
-									</button>
-								</h5>
-							</div>
-							<div id="collapseOne145" class="collapse" aria-labelledby="headingOne" data-parent="#accordion3">
-								<div class="card-body">
-								   Lorem ipsum dolor sit amet consectetur, adipisicing elit. Repellat officiis quisquam commodi animi aliquam, doloremque odio molestias consectetur repellendus, hic deleniti dicta numquam voluptatem aut, eius quasi! Cupiditate, ducimus commodi!
-								</div>
-							</div>
-						</div>
-						<div class="card">
-							<div class="card-header" id="headingOne">
-								<h5 class="mb-0">
-									<button class="btn btn-link" data-toggle="collapse" data-target="#collapseOne146" aria-expanded="true" aria-controls="collapseOne146">
-									Dirección Ejecución y Coordinación Seguridad y Salud
-									</button>
-								</h5>
-							</div>
-							<div id="collapseOne146" class="collapse" aria-labelledby="headingOne" data-parent="#accordion3">
-								<div class="card-body">
-								   Lorem ipsum dolor sit amet consectetur, adipisicing elit. Repellat officiis quisquam commodi animi aliquam, doloremque odio molestias consectetur repellendus, hic deleniti dicta numquam voluptatem aut, eius quasi! Cupiditate, ducimus commodi!
-								</div>
-							</div>
-						</div>
-						<div class="card">
-							<div class="card-header" id="headingOne">
-								<h5 class="mb-0">
-									<button class="btn btn-link" data-toggle="collapse" data-target="#collapseOne147" aria-expanded="true" aria-controls="collapseOne147">
-									Levantamiento topografico de parcelas
-									</button>
-								</h5>
-							</div>
-							<div id="collapseOne147" class="collapse" aria-labelledby="headingOne" data-parent="#accordion3">
-								<div class="card-body">
-								   Lorem ipsum dolor sit amet consectetur, adipisicing elit. Repellat officiis quisquam commodi animi aliquam, doloremque odio molestias consectetur repellendus, hic deleniti dicta numquam voluptatem aut, eius quasi! Cupiditate, ducimus commodi!
-								</div>
-							</div>
-						</div>
-					</div>
+                    </h5>
+                  </div>
+                  <div
+                    id="collapseOne1"
+                    class="collapse"
+                    aria-labelledby="headingOne"
+                    data-parent="#accordion2"
+                  >
+                    <div class="card-body">
+                      Anim pariatur cliche reprehenderit, enim eiusmod high life
+                      accusamus terry richardson ad squid. 3 wolf moon officia
+                      aute, non cupidatat skateboard dolor brunch. Food truck
+                      quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon
+                      tempor, sunt aliqua put a bird on it squid single-origin
+                      coffee nulla assumenda shoreditch et. Nihil anim keffiyeh
+                      helvetica, craft beer labore wes anderson cred nesciunt
+                      sapiente ea proident. Ad vegan excepteur butcher vice
+                      lomo. Leggings occaecat craft beer farm-to-table, raw
+                      denim aesthetic synth nesciunt you probably haven't heard
+                      of them accusamus labore sustainable VHS.
                     </div>
+                  </div>
+                </div>
+                <div class="card">
+                  <div class="card-header" id="headingOne">
+                    <h5 class="mb-0">
+                      <button
+                        class="btn btn-link"
+                        data-toggle="collapse"
+                        data-target="#collapseOne2"
+                        aria-expanded="true"
+                        aria-controls="collapseOne2"
+                      >
+                        Medición de fincas (casas, apartamentos y locales
+                        comerciales)
+                      </button>
+                    </h5>
+                  </div>
+                  <div
+                    id="collapseOne2"
+                    class="collapse"
+                    aria-labelledby="headingOne"
+                    data-parent="#accordion2"
+                  >
+                    <div class="card-body">
+                      Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                      Repellat officiis quisquam commodi animi aliquam,
+                      doloremque odio molestias consectetur repellendus, hic
+                      deleniti dicta numquam voluptatem aut, eius quasi!
+                      Cupiditate, ducimus commodi!
+                    </div>
+                  </div>
+                </div>
+                <div class="card">
+                  <div class="card-header" id="headingOne">
+                    <h5 class="mb-0">
+                      <button
+                        class="btn btn-link"
+                        data-toggle="collapse"
+                        data-target="#collapseOne3"
+                        aria-expanded="true"
+                        aria-controls="collapseOne3"
+                      >
+                        Certificado de antiguedad
+                      </button>
+                    </h5>
+                  </div>
+                  <div
+                    id="collapseOne3"
+                    class="collapse"
+                    aria-labelledby="headingOne"
+                    data-parent="#accordion2"
+                  >
+                    <div class="card-body">
+                      Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                      Repellat officiis quisquam commodi animi aliquam,
+                      doloremque odio molestias consectetur repellendus, hic
+                      deleniti dicta numquam voluptatem aut, eius quasi!
+                      Cupiditate, ducimus commodi!
+                    </div>
+                  </div>
+                </div>
+                <div class="card">
+                  <div class="card-header" id="headingOne">
+                    <h5 class="mb-0">
+                      <button
+                        class="btn btn-link"
+                        data-toggle="collapse"
+                        data-target="#collapseOne4"
+                        aria-expanded="true"
+                        aria-controls="collapseOne4"
+                      >
+                        Tasasiones inmobiliarias
+                      </button>
+                    </h5>
+                  </div>
+                  <div
+                    id="collapseOne4"
+                    class="collapse"
+                    aria-labelledby="headingOne"
+                    data-parent="#accordion2"
+                  >
+                    <div class="card-body">
+                      Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                      Repellat officiis quisquam commodi animi aliquam,
+                      doloremque odio molestias consectetur repellendus, hic
+                      deleniti dicta numquam voluptatem aut, eius quasi!
+                      Cupiditate, ducimus commodi!
+                    </div>
+                  </div>
+                </div>
+              </div>
             </div>
+          </div>
         </div>
+        <div class="card">
+          <div class="card-header" id="headingThree">
+            <h5 class="mb-0">
+              <button
+                class="btn btn-link collapsed"
+                data-toggle="collapse"
+                data-target="#collapseThree"
+                aria-expanded="false"
+                aria-controls="collapseThree"
+              >
+                GESTIONES URBANISTICAS
+              </button>
+            </h5>
+          </div>
+          <div
+            id="collapseThree"
+            class="collapse"
+            aria-labelledby="headingThree"
+            data-parent="#accordion"
+          >
+            <div class="card-body">
+              <div id="accordion3">
+                <div class="card">
+                  <div class="card-header" id="headingOne">
+                    <h5 class="mb-0">
+                      <button
+                        class="btn btn-link"
+                        data-toggle="collapse"
+                        data-target="#collapseOne111"
+                        aria-expanded="true"
+                        aria-controls="collapseOne111"
+                      >
+                        Cedulas de habitabilidad
+                      </button>
+                    </h5>
+                  </div>
+                  <div
+                    id="collapseOne111"
+                    class="collapse"
+                    aria-labelledby="headingOne"
+                    data-parent="#accordion3"
+                  >
+                    <div class="card-body">
+                      La cédula de habitabilidad es el documento administrativo
+                      que ratifica que una vivienda reúne las condiciones
+                      básicas para ser habitada, sin perjuicio de que en la
+                      misma se realicen otras actividades debidamente
+                      autorizadas. Deben cumplir unas condiciones basicas que
+                      dependera de la comunidad autónoma en la que se encuentre
+                      y del año de construcción. Pero los datos concretos que se
+                      miden son la superficie útil mínima de la vivienda y de
+                      las diferentes estancias, la altura libre, los huecos y
+                      las dotaciones mínimas.
+                      <h6>
+                        Existen tres tipos de cédulas en función de la
+                        antigüedad del inmueble
+                      </h6>
+                      <li>
+                        Cédula de primera ocupación: corresponden a las
+                        viviendas de nueva construcción, es decir, es la cédula
+                        de habitabilidad en vivienda nueva.
+                      </li>
+                      <li>
+                        Cédula de segunda ocupación: se refiere a las viviendas
+                        que ya existen. Corresponde a la renovación de la cédula
+                        de primera ocupación y, por consiguiente, se trata de la
+                        cédula de habitabilidad en vivienda antigua.
+                      </li>
+                      <li>
+                        Cédula de primera ocupación de rehabilitación: para
+                        aquellas viviendas en las que se ha realizado una
+                        rehabilitación de la misma.
+                      </li>
+                    </div>
+                  </div>
+                </div>
+                <div class="card">
+                  <div class="card-header" id="headingOne">
+                    <h5 class="mb-0">
+                      <button
+                        class="btn btn-link"
+                        data-toggle="collapse"
+                        data-target="#collapseOne123"
+                        aria-expanded="true"
+                        aria-controls="collapseOne123"
+                      >
+                        Declaraciones responsables
+                      </button>
+                    </h5>
+                  </div>
+                  <div
+                    id="collapseOne123"
+                    class="collapse"
+                    aria-labelledby="headingOne"
+                    data-parent="#accordion3"
+                  >
+                    <div class="card-body">
+                      Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                      Repellat officiis quisquam commodi animi aliquam,
+                      doloremque odio molestias consectetur repellendus, hic
+                      deleniti dicta numquam voluptatem aut, eius quasi!
+                      Cupiditate, ducimus commodi!
+                    </div>
+                  </div>
+                </div>
+                <div class="card">
+                  <div class="card-header" id="headingOne">
+                    <h5 class="mb-0">
+                      <button
+                        class="btn btn-link"
+                        data-toggle="collapse"
+                        data-target="#collapseOne132"
+                        aria-expanded="true"
+                        aria-controls="collapseOne132"
+                      >
+                        Comunicación previa de obras e instalaciones
+                      </button>
+                    </h5>
+                  </div>
+                  <div
+                    id="collapseOne132"
+                    class="collapse"
+                    aria-labelledby="headingOne"
+                    data-parent="#accordion3"
+                  >
+                    <div class="card-body">
+                      Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                      Repellat officiis quisquam commodi animi aliquam,
+                      doloremque odio molestias consectetur repellendus, hic
+                      deleniti dicta numquam voluptatem aut, eius quasi!
+                      Cupiditate, ducimus commodi!
+                    </div>
+                  </div>
+                </div>
+                <div class="card">
+                  <div class="card-header" id="headingOne">
+                    <h5 class="mb-0">
+                      <button
+                        class="btn btn-link"
+                        data-toggle="collapse"
+                        data-target="#collapseOne143"
+                        aria-expanded="true"
+                        aria-controls="collapseOne143"
+                      >
+                        Comunicación previa de primera ocupación
+                      </button>
+                    </h5>
+                  </div>
+                  <div
+                    id="collapseOne143"
+                    class="collapse"
+                    aria-labelledby="headingOne"
+                    data-parent="#accordion3"
+                  >
+                    <div class="card-body">
+                      Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                      Repellat officiis quisquam commodi animi aliquam,
+                      doloremque odio molestias consectetur repellendus, hic
+                      deleniti dicta numquam voluptatem aut, eius quasi!
+                      Cupiditate, ducimus commodi!
+                    </div>
+                  </div>
+                </div>
+                <div class="card">
+                  <div class="card-header" id="headingOne">
+                    <h5 class="mb-0">
+                      <button
+                        class="btn btn-link"
+                        data-toggle="collapse"
+                        data-target="#collapseOne142"
+                        aria-expanded="true"
+                        aria-controls="collapseOne142"
+                      >
+                        Lincencias de obra menor
+                      </button>
+                    </h5>
+                  </div>
+                  <div
+                    id="collapseOne142"
+                    class="collapse"
+                    aria-labelledby="headingOne"
+                    data-parent="#accordion3"
+                  >
+                    <div class="card-body">
+                      Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                      Repellat officiis quisquam commodi animi aliquam,
+                      doloremque odio molestias consectetur repellendus, hic
+                      deleniti dicta numquam voluptatem aut, eius quasi!
+                      Cupiditate, ducimus commodi!
+                    </div>
+                  </div>
+                </div>
+                <div class="card">
+                  <div class="card-header" id="headingOne">
+                    <h5 class="mb-0">
+                      <button
+                        class="btn btn-link"
+                        data-toggle="collapse"
+                        data-target="#collapseOne144"
+                        aria-expanded="true"
+                        aria-controls="collapseOne144"
+                      >
+                        Proyectos de legalicación y obra nueva
+                      </button>
+                    </h5>
+                  </div>
+                  <div
+                    id="collapseOne144"
+                    class="collapse"
+                    aria-labelledby="headingOne"
+                    data-parent="#accordion3"
+                  >
+                    <div class="card-body">
+                      Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                      Repellat officiis quisquam commodi animi aliquam,
+                      doloremque odio molestias consectetur repellendus, hic
+                      deleniti dicta numquam voluptatem aut, eius quasi!
+                      Cupiditate, ducimus commodi!
+                    </div>
+                  </div>
+                </div>
+                <div class="card">
+                  <div class="card-header" id="headingOne">
+                    <h5 class="mb-0">
+                      <button
+                        class="btn btn-link"
+                        data-toggle="collapse"
+                        data-target="#collapseOne145"
+                        aria-expanded="true"
+                        aria-controls="collapseOne145"
+                      >
+                        Licencia de apertura de actividades
+                      </button>
+                    </h5>
+                  </div>
+                  <div
+                    id="collapseOne145"
+                    class="collapse"
+                    aria-labelledby="headingOne"
+                    data-parent="#accordion3"
+                  >
+                    <div class="card-body">
+                      Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                      Repellat officiis quisquam commodi animi aliquam,
+                      doloremque odio molestias consectetur repellendus, hic
+                      deleniti dicta numquam voluptatem aut, eius quasi!
+                      Cupiditate, ducimus commodi!
+                    </div>
+                  </div>
+                </div>
+                <div class="card">
+                  <div class="card-header" id="headingOne">
+                    <h5 class="mb-0">
+                      <button
+                        class="btn btn-link"
+                        data-toggle="collapse"
+                        data-target="#collapseOne146"
+                        aria-expanded="true"
+                        aria-controls="collapseOne146"
+                      >
+                        Dirección Ejecución y Coordinación Seguridad y Salud
+                      </button>
+                    </h5>
+                  </div>
+                  <div
+                    id="collapseOne146"
+                    class="collapse"
+                    aria-labelledby="headingOne"
+                    data-parent="#accordion3"
+                  >
+                    <div class="card-body">
+                      Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                      Repellat officiis quisquam commodi animi aliquam,
+                      doloremque odio molestias consectetur repellendus, hic
+                      deleniti dicta numquam voluptatem aut, eius quasi!
+                      Cupiditate, ducimus commodi!
+                    </div>
+                  </div>
+                </div>
+                <div class="card">
+                  <div class="card-header" id="headingOne">
+                    <h5 class="mb-0">
+                      <button
+                        class="btn btn-link"
+                        data-toggle="collapse"
+                        data-target="#collapseOne147"
+                        aria-expanded="true"
+                        aria-controls="collapseOne147"
+                      >
+                        Levantamiento topografico de parcelas
+                      </button>
+                    </h5>
+                  </div>
+                  <div
+                    id="collapseOne147"
+                    class="collapse"
+                    aria-labelledby="headingOne"
+                    data-parent="#accordion3"
+                  >
+                    <div class="card-body">
+                      Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                      Repellat officiis quisquam commodi animi aliquam,
+                      doloremque odio molestias consectetur repellendus, hic
+                      deleniti dicta numquam voluptatem aut, eius quasi!
+                      Cupiditate, ducimus commodi!
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div
+        class="testimonio col-lg-2 col-md-10 col-sm-10 col-xs-10"
+        id="opinion"
+      >
+        <h2><b> Valoraciones de nuestros clientes </b></h2>
+
+        <div>
+          <div
+            id="carouselExampleIndicators"
+            class="carousel slide mt-4 text-center"
+            data-ride="carousel"
+          >
+            <ol class="carousel-indicators">
+              <li
+                data-target="#carouselExampleIndicators"
+                data-slide-to="0"
+                class="active"
+              ></li>
+              <li
+                data-target="#carouselExampleIndicators"
+                data-slide-to="1"
+              ></li>
+              <li
+                data-target="#carouselExampleIndicators"
+                data-slide-to="2"
+              ></li>
+              <li
+                data-target="#carouselExampleIndicators"
+                data-slide-to="3"
+              ></li>
+              <li
+                data-target="#carouselExampleIndicators"
+                data-slide-to="4"
+              ></li>
+              <li
+                data-target="#carouselExampleIndicators"
+                data-slide-to="5"
+              ></li>
+            </ol>
+            <div class="carousel-inner text-center">
+              <div class="carousel-item active">
+                <img
+                  class=""
+                  width="220px"
+                  height="330px"
+                  src="/Assets/img/op1.png"
+                  alt="First slide"
+                />
+              </div>
+              <div class="carousel-item">
+                <img
+                  class=""
+                  width="220px"
+                  height="330px"
+                  src="/Assets/img/op2.png"
+                  alt="Second slide"
+                />
+              </div>
+              <div class="carousel-item">
+                <img
+                  class=""
+                  width="220px"
+                  height="330px"
+                  src="/Assets/img/op3.png"
+                  alt="Third slide"
+                />
+              </div>
+              <div class="carousel-item">
+                <img
+                  class=""
+                  width="220px"
+                  height="330px"
+                  src="/Assets/img/op4.png"
+                  alt="Four slide"
+                />
+              </div>
+              <div class="carousel-item">
+                <img
+                  class=""
+                  width="220px"
+                  height="330px"
+                  src="/Assets/img/op2.png"
+                  alt="Five slide"
+                />
+              </div>
+              <div class="carousel-item">
+                <img
+                  class=""
+                  width="220px"
+                  height="330px"
+                  src="/Assets/img/op3.png"
+                  alt="Six slide"
+                />
+              </div>
+            </div>
+
+            <a
+              class="carousel-control-prev"
+              href="#carouselExampleIndicators"
+              role="button"
+              data-slide="prev"
+            >
+              <span
+                class="carousel-control-prev-icon"
+                aria-hidden="true"
+              ></span>
+              <span class="sr-only">Antes</span>
+            </a>
+            <a
+              class="carousel-control-next"
+              href="#carouselExampleIndicators"
+              role="button"
+              data-slide="next"
+            >
+              <span
+                class="carouselop-control-next-icon"
+                aria-hidden="false"
+              ></span>
+              <span class="sr-only">Despues</span>
+            </a>
+          </div>
+        </div>
+      </div>
     </div>
+  </body>
 
-	<div class="testimonio col-lg-2 col-md-10 col-sm-10 col-xs-10" id="opinion">
-		
-		<h2><b> Valoraciones de nuestros clientes </b></h2>
-		
-		<div>
-			<div id="carouselExampleIndicators" class="carousel slide  mt-4 text-center" data-ride="carousel">
-				<ol class="carousel-indicators">
-				<li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
-				<li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
-				<li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
-				<li data-target="#carouselExampleIndicators" data-slide-to="3"></li>
-				<li data-target="#carouselExampleIndicators" data-slide-to="4"></li>
-				<li data-target="#carouselExampleIndicators" data-slide-to="5"></li>
-				</ol>
-				<div class="carousel-inner text-center" >
-				<div class="carousel-item active">
-					<img class="" width="220px" height="330px" src="/Assets/img/op1.png" alt="First slide">
-				</div>
-				 <div class="carousel-item">
-					<img class="" width="220px" height="330px" src="/Assets/img/op2.png" alt="Second slide">
-				</div>
-				<div class="carousel-item">
-					<img class="" width="220px" height="330px" src="/Assets/img/op3.png" alt="Third slide">
-				</div>
-				<div class="carousel-item ">
-					<img class="" width="220px" height="330px" src="/Assets/img/op4.png" alt="Four slide">
-				</div>
-				<div class="carousel-item">
-					<img class="" width="220px" height="330px" src="/Assets/img/op2.png" alt="Five slide">
-				</div>
-				<div class="carousel-item">
-					<img class="" width="220px" height="330px" src="/Assets/img/op3.png" alt="Six slide">
-				</div> 
-
-				</div>
-			
-				<a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
-				<span class="carousel-control-prev-icon" aria-hidden="true"></span>
-					<span class="sr-only">Antes</span>
-				</a>
-				<a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
-				<span class="carouselop-control-next-icon" aria-hidden="false"></span>
-				<span class="sr-only">Despues</span>
-				</a>
-			</div>
-		</div>
-	</div>
-</div>
-
-</body>
-
-	
-
-<script src="https://cdn.jsdelivr.net/npm/jquery@3.4.1/dist/jquery.min.js"></script>
-<script src="https://cdn.jsdelivr.net/npm/popper.js@1.14.7/dist/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
-<script src="../Assets/event-calendar-evo/evo-calendar/js/evo-calendar.js"></script>
-
+  <script src="https://cdn.jsdelivr.net/npm/jquery@3.4.1/dist/jquery.min.js"></script>
+  <script
+    src="https://cdn.jsdelivr.net/npm/popper.js@1.14.7/dist/umd/popper.min.js"
+    integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+    crossorigin="anonymous"
+  ></script>
+  <script
+    src="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/js/bootstrap.min.js"
+    integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+    crossorigin="anonymous"
+  ></script>
+  <script src="../Assets/event-calendar-evo/evo-calendar/js/evo-calendar.js"></script>
 </html>

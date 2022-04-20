@@ -11,6 +11,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="../css/estiloindex.css">
     <link rel="stylesheet" href="../css/estilomedia.css">
+    <link rel="stylesheet" href="/css/estilocontacto.css">
     <title>DAVID GARCIA CALVO</title>
 </head>
 
@@ -21,18 +22,22 @@
 
         <div class="col-12 row">
             <div class="col-2 offset-1" id="logo" >
-                <img src="../Assets/logo/aparejadores.png" alt="Aparejador" width="150" height=150">
+                <img src="../Assets/logo/aparejadores.png" alt="Aparejador">
                 <h4>David Garcia</h4>
             </div>
 
               <nav class="navbar navbar-expand-lg navbar-light bg-light ">
-                <a class="navbar-brand" href="index.html">Inicio</a>
+              <!--  <a class="navbar-brand" href="index.html">Inicio</a>-->
                 <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
 
                   <span class="navbar-toggler-icon"></span>
                 </button>
+
                 <div class="collapse navbar-collapse" id="navbarNav">
                   <ul class="navbar-nav">
+                    <li class="nav-item" >
+                    <a class="navbar-brand" href="index.html">Inicio</a>
+                    </li>
                     <li class="nav-item">
                     <a class="nav-link" href="#" onclick="changePage('tarifas')"> <span>Tarifas</span> </a>
                     </li>
@@ -90,7 +95,7 @@
 
 
 <div class="serviciosdestacados" id="serviciosdestacados">
-    <div class="servicios-destacados col-10 offset-1">
+    <div class="servicios-destacados col-10">
         <h3>Servicios destacados</h3>
     </div>
     <div class="row col-10 offset-1" >
@@ -140,27 +145,72 @@
     </div>
     </div>
 
-
-
-
 </div>
 
-
+    <div id="aparejador">
+    <div class="grid-containercontacto" >
+        <div class="grid-aparejador col-10">
+            <h3>Aparejador David Garcia Calvo Arquitecto-Técnico</h3>
+        </div>
+        <div class="caja-datos row col-10">
+        <div class="grid-direccion"> 
+            <h3>Direccion</h3>
+            <li>Calle  del Duque de Sesto,16, 28009, Madrid</li>
+        </div>
+        <div class="grid-contacto">
+            <h3>Contacto</h3>
+            <li>Telefono: 657.998.043 </li>
+            <li>arqdavidgarcia@hotmail.com</li>
+        </div>
+        <div class="grid-horario">
+            <h3>Horario de atencion</h3>
+            <li>Lunes a viernes de 09:00 a 18:00</li>
+        </div>
+        </div>
+        </div>
+        <div class="row mapinfo col-10 offset-1">
+        <div class="grid-mapa">
+            <img  src="../Assets/img/mapa.png"  width="800px" height="500px"  alt="mapa">
+            <a id="mapss" href=" https://maps.google.com/?q=Calle  del Duque de Sesto,16, 28009, Madrid" target="_blank"> <h3 style="border-style: double;"> Como llegar</h3></a>
+                </div>
+            
+            <div class="grid-masinfo">
+                <h2>Mas información</h2>
+                <p> Cuentanos como podemos ayudarte</p>    
+                <form>
+                    <div>
+                        <div class="grid-datos">
+                            <input type="text" class="form-control " placeholder="Nombre">
+                            <input type="text" class="form-control " placeholder="Teléfono">
+                            <input type="text" class="form-control" placeholder="Email">
+                            <textarea type="text" class="form-control" placeholder="Cuentanos como podemos ayudarte"></textarea>
+                        </div>
+                    </div>
+                        <div class="mt-3 text-center">
+                            <a class="btn btn-primary" onclick="document.getElementById('contact-form').submit();" style="color: white;">Enviar</a>
+                        </div>
+                </form>
+            </div>
+        </div>
+        </div>
+        
+    </div>
+</div>
 </main>
 
 
 <div id="iframe">
     <div id="iframe_tarifas" style="display:none;">
-        <iframe  src="pages/Tarifas.html" frameBorder="0" height="1450" width="95%" ></iframe>
+        <iframe  src="pages/Tarifas.html" frameBorder="0" height="1450" width="100%" ></iframe>
     </div>
     <div id="iframe_servicios" style="display:none;" >
-        <iframe  src="pages/Servicios.html" frameBorder="0" height="1250" width="99%" ></iframe>
+        <iframe  src="pages/Servicios.html" frameBorder="0" height="1250" width="100%" ></iframe>
     </div>
     <div id="iframe_galeria" style="display:none;" >
-        <iframe  src="pages/Galeria.html" frameBorder="0" height="1000" width="99%" ></iframe>
+        <iframe  src="pages/Galeria.html" frameBorder="0" height="1000" width="100%" ></iframe>
     </div>
     <div id="iframe_Contacto" style="display:none;">
-        <iframe  src="pages/Contacto.html" frameBorder="0" height="1000" width="90%" ></iframe>
+        <iframe  src="pages/Contacto.html" frameBorder="0" height="1100" width="100%" ></iframe>
     </div>
     </div>
 
@@ -191,6 +241,7 @@ function changePage(pagina) {
 
     //document.getElementById('carousel').style.display="none";//
     document.getElementById('serviciosdestacados').style.display="none";
+    document.getElementById('aparejador').style.display="none";
 
         if (pagina=='tarifas') {
 

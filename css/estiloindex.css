@@ -16,6 +16,7 @@ body{
 header{
     background-image: url(/Assets/img/planos.jpg);
     background-size:cover;
+    width: 100%;
     height: 250px;
     border-bottom: 2px groove #101646;
 }
@@ -24,6 +25,12 @@ header{
     padding: 10px;
     text-align: center;
     top: 20px;
+    
+}
+
+#logo img{
+    width: 150px;
+    height: 150px;
 }
 
 .navbar{
@@ -51,7 +58,7 @@ header{
     border-color:#070f50e3 #ffffff86 ;
     border-style: inset;
     border-width: 10px 5px;
-
+    margin-left: 8.33%;
 }
 
 .card{
@@ -70,6 +77,20 @@ header{
     margin-left: auto;
     margin-right: auto;
 }
+
+.grid-aparejador{
+    margin-left: 8.33%;
+    background-color: #070f50e3;
+    color: white;
+    margin-top: 150px;
+    padding: 2px;
+    padding-top: 10px;
+    text-align: center;
+    border-color: #070f50e3 #ffffff86;
+    border-style: inset;
+    border-width: 10px 5px;
+}
+
 
     .grid-containerfoot {
         display: grid;
