@@ -1,0 +1,25 @@
+$color-background:#a9b6c586;
+$hidden-overflow:hidden;
+$textj: justify;
+$color-text: #081366;
+
+$widthImageLogo: 150px;
+$heightImageLogo: 150px;
+
+
+
+body{
+  background-color: $color-background;
+  overflow-x: $hidden-overflow;
+  text-align:$textj;
+  color:$color-text;
+}
+
+
+#logo img{
+  width: $widthImageLogo;
+  height:$heightImageLogo;
+}
+
+
+

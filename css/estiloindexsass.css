@@ -1,0 +1,13 @@
+body {
+  background-color: rgba(169, 182, 197, 0.5254901961);
+  overflow-x: hidden;
+  text-align: justify;
+  color: #081366;
+}
+
+#logo img {
+  width: 150px;
+  height: 150px;
+}
+
+/*# sourceMappingURL=estiloindexsass.css.map */
