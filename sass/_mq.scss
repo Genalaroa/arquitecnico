@@ -1,0 +1,79 @@
+
+//index
+
+@media screen and (max-width: 480px){
+  
+  header{
+    width: 600px;
+    height: auto;
+
+    #logo{
+    margin-left: 10px;
+      img{
+        width: 100px;
+        height: 100px;
+        }
+
+      h4{
+        font-size: 20px;
+        margin-left: 0px;
+        justify-content: center;
+        }
+      }
+
+    .navbar{
+      margin-right: 30px;
+      margin: 0%;
+      a{
+        font-size: 20px;
+        font-weight: 100px;
+      }
+    }
+  }
+
+  .serviciosdestacados{
+    width: 550px;
+    h3{
+      font-size: 20px;
+    }
+    .card{
+      margin-inline: auto;
+    }
+  }
+
+  #aparejador{
+    width: 550px;
+    h3{
+      font-size: 20px;
+    }
+    .grid-aparejadorindex{
+      margin-top: 30px;
+    }
+
+    img{
+      width: 400px;
+      height: 400px;
+    }
+
+    .grid-masinfo{
+      margin-top: 15px;
+    }
+  }
+
+  footer{
+    width: 600px;
+
+    .redes{
+      img{
+        width: 30px;
+        height: 30px;
+        }
+      }
+
+    h5{
+      font-size: 15px;
+    }
+  }
+
+
+  }

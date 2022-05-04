@@ -4,85 +4,80 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--SEO-->
+    <meta name="description" content="David Garcia Calvo arquitecto técnico con mas de 20 años de experiencia. Licenciado en la universidad Central de Venezuela."> 
+    <meta name="keywords" content="ARQUITECTO, ARQUITECTO TECNICO, ARQUITECTO TENERIFE, ARQUITECTO AYUNTAMIENTO, ARQUITECTO MUNICIPAL APAREJADOR, TECNICO, CERTIFICADOS, GESTIONES INMOBILIARIAS, GESTIONES CATASTRALES, GESTIONES URBANISTICAS">
+    <!--Estilos-->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
-    <link rel="stylesheet" type="text/css" href="../Assets/event-calendar-evo/evo-calendar/css/evo-calendar.css"/>
-    <link rel="stylesheet" type="text/css" href="../Assets/event-calendar-evo/evo-calendar/css/evo-calendar.midnight-blue.css"/>
-    <link rel="stylesheet" type="text/css" href="../Assets/event-calendar-evo/evo-calendar/css/evo-calendar.royal-navy.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="/css/estiloindex.css">
-    <title>ARQUITECTO - TÉCNICO- TARIFAS</title>
 </head>
 
+<script>
+  window.onresize = function(medida){
+    var mediaQuery320 = window.matchMedia("(max-width: 320px)");
 
+    if (mediaQuery320 ==true) {
+      document.getElementById("tarifas").classList.remove("row");
 
-    <body>
+    }else
+      document.getElementById("tarifas").classList.add("row");
+  }
 
-  <div class="col-7 row">
-        <table class="table table-hover">
-          <div>
-              <tbody>
-                <h3> TARIFAS</h3>
-              <tr>
-                <th>Gestiones inmobiliarias</th>
-                <th>Gestiones catastrales</th>
-                <th>Gestiones urbanisticas</th>
-              </tr>
-              <tr>
-                <td>Certificado deficiencia energetica</td>
-                <td>Corrección de linderos (son los bordes de una parcela) y superficies</td>
-                <td>Cédulas de habitabilidad</td>
-              </tr>
-              <tr>
-                <td>Medición de fincas (casas, apartamentos y locales comerciales)</td>
-                <td>Segregaciones y agrupaciones de parcelas</td>
-                <td>Declaraciones responsables</td>
-              </tr>
-              <tr>
-                <td>Certificado de antiguedad</td>
-                <td>Tramites varios</td>
-                <td>Comunicación previa de obras e instalaciones</td>
-              </tr>
-              <tr>
-                <td>Tasasiones inmobiliarias</td>
-                <td>Georreferenciación y coordenadas U.T.M. </td>
-                <td>Comunicación previa de primera ocupación</td>
-              </tr>
-              <tr>
-                <td></td>
-                <td></td>
-                <td>Lincencias de obra menor</td>
-              </tr>
-              <tr>
-                <td></td>
-                <td></td>
-                <td>Proyectos de legalicación y obra nueva</td>
-              </tr>
-              <tr>
-                <td></td>
-                <td></td>
-                <td>Licencia de apertura de actividades</td>
-              </tr>
-              <tr>
-                <td></td>
-                <td></td>
-                <td>Dirección Ejecución y Coordinación Seguridad y Salud</td>
-              </tr>
-              <tr>
-                <td></td>
-                <td></td>
-                <td>Levantamiento topografico de parcelas</td>
-              </tr>
-            </tbody>
+</script>
+
+<body>
+
+<div class="tarifas col-12 row" id="tarifas">
+  <div class="precios col-lg-8 ">
+    <div><h3>TARIFAS</h3></div>
+    <div class="gestionescompleto">
+      <ul>
+        <div class="ges-inm row col-12">
+            <h4><u> Gestiones inmobiliarias</u>*</h4>
+          <div class="ges-inm-serv"> 
+            <li>Certificado deficiencia energetica. <h6>Desde 550€</h6></li>
+            <li>Medición de fincas (casas, apartamentos y locales comerciales).<h6>Desde 1.500€</h6></li>
+            <li>Certificado de antiguedad.<h6>Desde 230€</h6></li>
+            <li>Tasasiones inmobiliarias.<h6>Desde 550€</h6></li>
           </div>
-        </table>
-
-      <div class="sobremi col-5 "> 
-        <H1>SOBRE MI </H1>
-        <div class="david">
-        <img src="../Assets/img/tio 2.png" alt="Davidgarcia" width="400" height="350">
-        <h3>David Garcia. Nacido en Venezuela, graduado en la Universidad Central de Venezuela en 1993. Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores inventore ipsam totam incidunt optio modi distinctio? Animi excepturi omnis quas rerum a voluptatem veritatis ullam laboriosam dolores amet. Esse, pariatur.</h3>
+        </div>
+        <br>
+        <div class="ges-cat row col-12">
+          <h4><u>Gestiones catastrales</u>*</h4>
+        <div class="ges-cat-serv"> 
+          <li>Corrección de linderos (son los bordes de una parcela) y superficies.<h6>Desde 1.000€</h6></li>
+          <li>Segregaciones y agrupaciones de parcelas.<h6>Desde 700€</h6></li>
+          <li>Tramites varios.<h6>Solicita presupuesto del tramite</h6></li>
+          <li>Georreferenciación y coordenadas U.T.M.<h6>Desde 330€</h6></li>
         </div>
       </div>
+      <br>
+      <div class="ges-urb row col-12">
+        <h4><u>Gestiones urbanisticas</u>*</h4>
+      <div class="ges-urb-serv"> 
+        <li>Cédulas de habitabilidad.<h6>Desde 250€</h6></li>
+        <li>Declaraciones responsables.<h6>Desde 100€</h6></li>
+        <li>Licencia de primera ocupación.<h6>Desde 100€</h6></li>
+        <li>Lincencias de obra menor.<h6>Desde 1.200€</h6></li>
+        <li>Proyectos de legalización y obra nueva.<h6>Desde 1.900€</h6></li>
+        <li>Licencia de apertura de actividades.<h6>Desde 1.700€</h6></li>
+        <li>Dirección Ejecución y Coordinación Seguridad y Salud.<h6>Desde 450€</h6></li>
+        <li>Levantamiento topografico de parcelas.<h6>Desde 100€</h6></li>
+      </div>
     </div>
+      <p>*Los precios son aproximados. Pueden variar según los requisidos exigidos de cada documento. Tasas e IVA no incluidos.</p>
+    </div>
+  </div>
+  <div class="sobremi col-lg-4 "> 
+    <H3>SOBRE MI </H3>
+      <div class="david">
+        <center><img src="../Assets/img/tio 2.png" alt="Davidgarcia"></center>
+        <p>David Garcia. Nacido en Venezuela, graduado en la Universidad Central de Venezuela en 1993. Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores inventore ipsam totam incidunt optio modi distinctio? Animi excepturi omnis quas rerum a voluptatem veritatis ullam laboriosam dolores amet. Esse, pariatur.</p>
+      </div>
+  </div>
+</div>
+
 </body>
 
 
@@ -91,9 +86,6 @@
 <script src="https://cdn.jsdelivr.net/npm/jquery@3.4.1/dist/jquery.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/popper.js@1.14.7/dist/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
-<script src="../Assets/event-calendar-evo/evo-calendar/js/evo-calendar.js"></script>
-
-
 
 
 </html>
