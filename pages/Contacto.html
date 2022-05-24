@@ -9,6 +9,37 @@
     <title>ARQUITECTO - TÉCNICO- TARIFAS</title>
 
 </head>
+<script>
+  window.onresize = function (event) {
+      var mediaQuery = window.matchMedia("(max-width: 1200px)");
+      if (mediaQuery.matches == true) {
+        document.getElementById("mapinfo").classList.remove("col-8");
+        document.getElementById("mapinfo").classList.add("col-10");
+
+      } else {
+        document.getElementById("mapinfo").classList.add("col-8");
+        document.getElementById("mapinfo").classList.remove("col-10");
+
+      }
+
+      var mediaQuery = window.matchMedia("(max-width: 1024px)");
+
+    if (mediaQuery.matches == true) {
+      document.getElementById("caja-datosc").classList.remove("col-10");
+      document.getElementById("caja-datosc").classList.add("col-11");
+
+    } else {
+      document.getElementById("caja-datosc").classList.add("col-10");
+      document.getElementById("caja-datosc").classList.remove("col-11");
+
+    }
+
+
+  }
+
+
+
+</script>
 
 
 <body>
@@ -18,7 +49,7 @@
     <div class="grid-aparejador col-10 offset-1">
       <h3>APAREJADOR DAVID GARCÍA CALVO ARQUITECTO-TÉCNICO</h3>
     </div>
-    <div class="caja-datos row col-10 offset-1">
+    <div class="caja-datos row col-10 offset-1" id="caja-datosc">
       <div class="grid-direccion"> 
         <h3>Direccion</h3>
         <li>Calle  del Duque de Sesto,16, 28009, Madrid</li>
@@ -34,7 +65,7 @@
       </div>
     </div>
   </div>
-  <div class="row mapinfo col-8 offset-1">
+  <div class="row mapinfo col-8 offset-1" id="mapinfo">
     <div class="grid-mapa">
       <img  src="../Assets/img/mapa.png"  width="800px" height="500px"  alt="mapa">
       <a id="mapss" href=" https://maps.google.com/?q=Calle  del Duque de Sesto,16, 28009, Madrid" target="_blank"> <h3 style="border-style: double;  color: #081366;"> Como llegar</h3></a>

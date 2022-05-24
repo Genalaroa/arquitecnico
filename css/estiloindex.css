@@ -215,29 +215,30 @@ footer .info {
 }
 
 /*Servicios*/
-.gestiones {
+#accordion {
   margin-top: 50px;
   margin-inline: auto;
   background-color: #a9b6c586;
   border-style: none;
   text-align: center;
+  width: 1200px;
 }
 
-.gestiones .card {
+#accordion .card {
   background-color: #a9b6c586;
   border-style: none;
   color: #101646;
 }
 
-.gestiones .card .card-header {
+#accordion .card .card-header {
   text-align: center;
 }
 
-.gestiones .card .card-body {
+#accordion .card .card-body {
   text-align: justify;
 }
 
-.gestiones .card .btn-link {
+#accordion .card .btn-link {
   background-color: #a9b6c586;
   color: #101646;
   text-align: center;
@@ -255,10 +256,23 @@ footer .info {
   padding: 12px;
   margin: 50px;
   margin-left: 8%;
+  -webkit-margin-start: inherit;
+          margin-inline-start: inherit;
 }
 
 .testimonio h2 {
   text-align: center;
+}
+
+.testimonio #opinion {
+  -webkit-margin-end: auto;
+          margin-inline-end: auto;
+  width: 500px;
+}
+
+.carousel-item img {
+  width: 220px;
+  height: 330px;
 }
 
 .carousel-control-prev-icon {
@@ -279,6 +293,7 @@ footer .info {
 
 .containergaleria p {
   text-align: justify;
+  padding: 30px;
 }
 
 .containergaleria img {
@@ -345,7 +360,741 @@ footer .info {
   margin-bottom: 50px;
 }
 
-@media (max-width: 320px) {
+.mapinfo .grid-masinfo {
+  -webkit-margin-before: inherit;
+          margin-block-start: inherit;
+  -webkit-margin-start: inherit;
+          margin-inline-start: inherit;
+}
+
+@media screen and (min-width: 1025px) and (max-width: 1200px) {
+  header {
+    width: 1200px;
+  }
+  .serviciosdestacados {
+    width: 1200px;
+  }
+  .serviciosdestacados .tarjetas {
+    margin-left: 65px;
+  }
+  .serviciosdestacados h3 {
+    font-size: 28px;
+  }
+  .serviciosdestacados .card {
+    width: 196px;
+    height: 550px;
+    margin-left: 3px;
+  }
+  .serviciosdestacados .card img {
+    height: 100px;
+    width: 150px;
+  }
+  .serviciosdestacados .card .card-text {
+    height: 313px;
+    text-align: justify;
+    margin-bottom: auto;
+  }
+  .serviciosdestacados .card .card-body #btnbol {
+    margin-top: 20px;
+  }
+  #caja-datos {
+    width: 1200px;
+    margin-left: 50px;
+  }
+  .mapinfo img {
+    width: auto;
+  }
+  .gestionescompleto h6 {
+    margin-left: 25px;
+  }
+  .sobremi {
+    -webkit-margin-start: inherit;
+            margin-inline-start: inherit;
+  }
+  #accordion {
+    width: 500px;
+  }
+  .testimonio {
+    width: 250px;
+    -webkit-margin-end: auto;
+            margin-inline-end: auto;
+  }
+  .testimonio #opinion {
+    -webkit-margin-end: auto;
+            margin-inline-end: auto;
+  }
+  .mapinfo {
+    -webkit-margin-start: 100px;
+            margin-inline-start: 100px;
+  }
+  .mapinfo .grid-mapa img {
+    width: 500px;
+    height: auto;
+  }
+}
+
+@media screen and (min-width: 769px) and (max-width: 1024px) {
+  header {
+    width: 1024px;
+  }
+  body {
+    width: 1024px;
+  }
+  .navbar {
+    margin: 50px;
+  }
+  .servicios-destacados {
+    width: 850px;
+  }
+  .servicios-destacados .tarjetas {
+    width: 1024px;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    margin-left: 1000px;
+  }
+  .servicios-destacados .tarjetas .card {
+    width: 250px;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .caja-datos {
+    margin-left: 45px;
+    margin-right: 0px;
+    -webkit-box-pack: space-evenly;
+        -ms-flex-pack: space-evenly;
+            justify-content: space-evenly;
+  }
+  .grid-direccion {
+    margin-left: 0px;
+  }
+  .grid-contacto {
+    margin-left: 0px;
+  }
+  .grid-horario {
+    margin-left: 0px;
+  }
+  .testimonio {
+    margin-inline: auto;
+  }
+  .mapinfo {
+    -webkit-margin-start: 65px;
+            margin-inline-start: 65px;
+  }
+}
+
+@media screen and (min-width: 601px) and (max-width: 768px) {
+  header {
+    width: 770px;
+  }
+  body {
+    width: 768px;
+  }
+  .navbar {
+    -webkit-margin-end: auto;
+            margin-inline-end: auto;
+  }
+  .navbar .navbar-toggler-icon {
+    height: 20px;
+  }
+  .serviciosdestacados {
+    width: 767px;
+    margin-top: 80px;
+    margin-left: 30px;
+  }
+  .serviciosdestacados h3 {
+    width: 600px;
+  }
+  .serviciosdestacados .tarjetas {
+    margin-left: 50px;
+  }
+  .info {
+    font-size: inherit;
+  }
+  .mapinfo .grid-mapa img {
+    width: auto;
+  }
+  #iframe_tarifas {
+    width: 768px;
+  }
+  #gestionescompleto li h6 {
+    margin-left: 50px;
+  }
+  .testimonio {
+    margin-inline: auto;
+  }
+  #iframe_galeria {
+    width: 768px;
+  }
+  .grid-masinfo .grid-datos {
+    margin-left: 0px;
+  }
+  .grid-containercontacto .caja-datos, .grid-containercontactoindex .caja-datos {
+    width: auto;
+    margin-inline: auto;
+  }
+}
+
+@media screen and (min-width: 481px) and (max-width: 600px) {
+  header {
+    width: 600px;
+    height: auto;
+  }
+  body {
+    width: 500px;
+  }
+  main {
+    width: 600px;
+  }
+  #logo {
+    margin-left: 30px;
+  }
+  #logo img {
+    width: 120px;
+    height: 120px;
+  }
+  #logo h4 {
+    font-size: 25px;
+    margin-left: -7px;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .navbar {
+    margin-right: 10px;
+    width: 100px;
+    padding-right: 50px;
+  }
+  .navbar span {
+    width: 10px;
+    height: 10px;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .navbar a {
+    font-size: 20px;
+    font-weight: 100px;
+  }
+  .serviciosdestacados {
+    width: 600px;
+  }
+  .serviciosdestacados h3 {
+    width: 600px;
+    font-size: 23px;
+    margin-left: -60px;
+  }
+  .serviciosdestacados .card {
+    margin-inline: auto;
+    height: 500px;
+  }
+  .serviciosdestacados .card img {
+    width: 200px;
+    height: 150px;
+  }
+  .serviciosdestacados .card h5 {
+    font-size: 19px;
+  }
+  .serviciosdestacados .card p {
+    font-size: 15px;
+    margin-bottom: 35px;
+  }
+  .serviciosdestacados .card a {
+    margin-bottom: 1px;
+  }
+  #aparejador {
+    width: 600px;
+  }
+  #aparejador h3 {
+    font-size: 15px;
+  }
+  #aparejador .grid-aparejadorindex {
+    margin-top: 20px;
+  }
+  #aparejador .grid-aparejadorindex .caja-datos {
+    margin-top: 10px;
+  }
+  #aparejador img {
+    width: 450px;
+    height: 450px;
+  }
+  #aparejador .grid-masinfo {
+    margin-top: 15px;
+  }
+  #aparejador .grid-masinfo h2 {
+    font-size: 25px;
+  }
+  footer {
+    width: 600px;
+  }
+  footer .redes img {
+    width: 25px;
+    height: 25px;
+  }
+  footer h5 {
+    font-size: 15px;
+    margin-top: 10px;
+  }
+  /*// tarifas*/
+  #iframe_tarifas {
+    width: 600px;
+  }
+  .tarifas h3 {
+    width: 500px;
+    font-size: 25px;
+  }
+  .tarifas ul {
+    width: 500px;
+  }
+  .tarifas ul h4 {
+    font-size: 20px;
+  }
+  .tarifas ul h6 {
+    margin-left: 50px;
+  }
+  .tarifas .sobremi {
+    width: 500px;
+  }
+  .tarifas .sobremi img {
+    width: 250px;
+    height: 240px;
+    margin-left: 80px;
+  }
+  .tarifas .sobremi p {
+    width: 500px;
+    font-size: 20px;
+  }
+  /*servicios*/
+  #iframe_servicios {
+    width: 600px;
+  }
+  .gest {
+    width: 600px;
+  }
+  .testimonio {
+    margin-left: 100px;
+  }
+  /*galeria*/
+  #iframe_galeria {
+    width: 600px;
+  }
+  .containergaleria {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .containergaleria .grid-energetico {
+    margin-inline: 80px;
+  }
+  .containergaleria .grid-energetico img {
+    margin-left: inherit;
+    width: 230px;
+    height: 200px;
+  }
+  .containergaleria .grid-energetico h4 {
+    margin-left: 20px;
+    width: 350px;
+  }
+  .containergaleria .grid-energetico p {
+    margin-left: 20px;
+    width: 350px;
+  }
+  .containergaleria .grid-topografo {
+    margin-inline: 80px;
+  }
+  .containergaleria .grid-topografo img {
+    margin-left: inherit;
+    width: 230px;
+    height: 200px;
+  }
+  .containergaleria .grid-topografo h4 {
+    margin-left: 20px;
+    width: 350px;
+  }
+  .containergaleria .grid-topografo p {
+    margin-left: 20px;
+    width: 350px;
+  }
+  .containergaleria .grid-obra {
+    margin-inline: 80px;
+  }
+  .containergaleria .grid-obra img {
+    margin-left: inherit;
+    width: 230px;
+    height: 200px;
+  }
+  .containergaleria .grid-obra h4 {
+    margin-left: 20px;
+    width: 350px;
+  }
+  .containergaleria .grid-obra p {
+    margin-left: 20px;
+    width: 350px;
+  }
+  .containergaleria .grid-plano {
+    margin-inline: 80px;
+  }
+  .containergaleria .grid-plano img {
+    margin-left: inherit;
+    width: 230px;
+    height: 200px;
+  }
+  .containergaleria .grid-plano h4 {
+    margin-left: 20px;
+    width: 350px;
+  }
+  .containergaleria .grid-plano p {
+    margin-left: 20px;
+    width: 350px;
+  }
+  .containergaleria .grid-casco {
+    margin-inline: 80px;
+  }
+  .containergaleria .grid-casco img {
+    margin-left: inherit;
+    width: 230px;
+    height: 200px;
+  }
+  .containergaleria .grid-casco h4 {
+    margin-left: 20px;
+    width: 350px;
+  }
+  .containergaleria .grid-casco p {
+    margin-left: 20px;
+    width: 350px;
+  }
+  .containergaleria .grid-tecnico {
+    margin-inline: 80px;
+  }
+  .containergaleria .grid-tecnico img {
+    margin-left: inherit;
+    width: 230px;
+    height: 200px;
+  }
+  .containergaleria .grid-tecnico h4 {
+    margin-left: 20px;
+    width: 350px;
+  }
+  .containergaleria .grid-tecnico p {
+    margin-left: 20px;
+    width: 350px;
+  }
+  #iframe_Contacto {
+    width: 600px;
+  }
+  .grid-containercontacto, .grid-containercontactoindex {
+    width: 600px;
+  }
+  .grid-containercontacto .grid-aparejador, .grid-containercontactoindex .grid-aparejador, .grid-containercontacto .grid-aparejadorindex, .grid-containercontactoindex .grid-aparejadorindex {
+    width: 550px;
+  }
+  .grid-containercontacto .grid-aparejador h3, .grid-containercontactoindex .grid-aparejador h3, .grid-containercontacto .grid-aparejadorindex h3, .grid-containercontactoindex .grid-aparejadorindex h3 {
+    font-size: 18px;
+    width: 500px;
+  }
+  .caja-datos {
+    width: 500px;
+  }
+  .mapinfo {
+    width: 500px;
+  }
+  .mapinfo .grid-mapa {
+    width: 500px;
+    -webkit-margin-start: 100px;
+            margin-inline-start: 100px;
+  }
+  .mapinfo .grid-mapa img {
+    width: 400px;
+    height: 400px;
+  }
+  .mapinfo .grid-masinfo {
+    margin-left: 100px;
+    width: 500px;
+  }
+}
+
+@media screen and (min-width: 321px) and (max-width: 480px) {
+  header {
+    width: 480px;
+    height: auto;
+  }
+  header #logo {
+    margin-left: 30px;
+  }
+  header #logo img {
+    width: 90px;
+    height: 90px;
+  }
+  header #logo h4 {
+    font-size: 15px;
+    margin-left: 0px;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  header .navbar {
+    margin-right: 10px;
+    width: 100px;
+    padding-right: 50px;
+  }
+  header .navbar span {
+    width: 10px;
+    height: 10px;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  header .navbar a {
+    font-size: 15px;
+    font-weight: 100px;
+  }
+  .serviciosdestacados {
+    width: 400px;
+  }
+  .serviciosdestacados .servicios-destacados {
+    -webkit-margin-start: auto;
+            margin-inline-start: auto;
+    margin-left: 80px;
+  }
+  .serviciosdestacados h3 {
+    margin-left: -10px;
+    width: 350px;
+    font-size: 19px;
+  }
+  .serviciosdestacados .tarjetas {
+    -webkit-margin-start: auto;
+            margin-inline-start: auto;
+  }
+  .serviciosdestacados .tarjetas .card {
+    margin-inline: auto;
+    height: 500px;
+  }
+  .serviciosdestacados .tarjetas .card img {
+    width: 200px;
+    height: 150px;
+  }
+  .serviciosdestacados .tarjetas .card h5 {
+    font-size: 19px;
+  }
+  .serviciosdestacados .tarjetas .card p {
+    font-size: 15px;
+    margin-bottom: 35px;
+  }
+  .serviciosdestacados .tarjetas .card a {
+    margin-bottom: 1px;
+  }
+  #aparejador {
+    width: 480px;
+  }
+  #aparejador h3 {
+    font-size: 15px;
+  }
+  #aparejador .grid-aparejadorindex {
+    margin-top: 20px;
+  }
+  #aparejador .grid-aparejadorindex .caja-datos {
+    margin-top: 10px;
+  }
+  #aparejador img {
+    width: 300px;
+    height: 300px;
+  }
+  #aparejador .grid-masinfo {
+    margin-top: 15px;
+  }
+  #aparejador .grid-masinfo h2 {
+    font-size: 25px;
+  }
+  footer {
+    width: 480px;
+  }
+  footer .redes img {
+    width: 23px;
+    height: 23px;
+  }
+  footer h5 {
+    margin-left: -12px;
+    width: 350px;
+    font-size: 15px;
+    margin-top: 10px;
+  }
+  /*// tarifas*/
+  #iframe_tarifas {
+    width: 480px;
+  }
+  .tarifas {
+    width: 450px;
+  }
+  .tarifas .gestionescompleto {
+    width: 450px;
+  }
+  .tarifas .gestionescompleto ul {
+    margin-inline: auto;
+  }
+  .tarifas .gestionescompleto ul li {
+    margin-left: 10px;
+  }
+  .tarifas .gestionescompleto h3 {
+    font-size: 25px;
+  }
+  .tarifas .gestionescompleto h4 {
+    font-size: 20px;
+  }
+  .tarifas .sobremi img {
+    width: 150px;
+    height: 150px;
+  }
+  .tarifas .sobremi p {
+    font-size: 20px;
+  }
+  /*servicios*/
+  #iframe_servicios {
+    width: 480px;
+  }
+  .gestiones {
+    -webkit-margin-start: 1%;
+            margin-inline-start: 1%;
+  }
+  .testimonio {
+    margin-inline: auto;
+  }
+  /*galeria*/
+  #iframe_galeria {
+    width: 480px;
+  }
+  .containergaleria {
+    width: 400px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .containergaleria .grid-energetico {
+    margin-inline: 40px;
+  }
+  .containergaleria .grid-energetico img {
+    margin-left: inherit;
+    width: 230px;
+    height: 200px;
+  }
+  .containergaleria .grid-energetico h4 {
+    margin-left: 5px;
+    width: 300px;
+  }
+  .containergaleria .grid-energetico p {
+    margin-left: 0px;
+    width: 310px;
+  }
+  .containergaleria .grid-topografo {
+    margin-inline: 40px;
+  }
+  .containergaleria .grid-topografo img {
+    margin-left: inherit;
+    width: 230px;
+    height: 200px;
+  }
+  .containergaleria .grid-topografo h4 {
+    margin-left: 5px;
+    width: 300px;
+  }
+  .containergaleria .grid-topografo p {
+    margin-left: 0px;
+    width: 310px;
+  }
+  .containergaleria .grid-obra {
+    margin-inline: 40px;
+  }
+  .containergaleria .grid-obra img {
+    margin-left: inherit;
+    width: 230px;
+    height: 200px;
+  }
+  .containergaleria .grid-obra h4 {
+    margin-left: 5px;
+    width: 300px;
+  }
+  .containergaleria .grid-obra p {
+    margin-left: 0px;
+    width: 310px;
+  }
+  .containergaleria .grid-plano {
+    margin-inline: 40px;
+  }
+  .containergaleria .grid-plano img {
+    margin-left: inherit;
+    width: 230px;
+    height: 200px;
+  }
+  .containergaleria .grid-plano h4 {
+    margin-left: 5px;
+    width: 300px;
+  }
+  .containergaleria .grid-plano p {
+    margin-left: 0px;
+    width: 310px;
+  }
+  .containergaleria .grid-casco {
+    margin-inline: 40px;
+  }
+  .containergaleria .grid-casco img {
+    margin-left: inherit;
+    width: 230px;
+    height: 200px;
+  }
+  .containergaleria .grid-casco h4 {
+    margin-left: 5px;
+    width: 300px;
+  }
+  .containergaleria .grid-casco p {
+    margin-left: 0px;
+    width: 310px;
+  }
+  .containergaleria .grid-tecnico {
+    margin-inline: 40px;
+  }
+  .containergaleria .grid-tecnico img {
+    margin-left: inherit;
+    width: 230px;
+    height: 200px;
+  }
+  .containergaleria .grid-tecnico h4 {
+    margin-left: 5px;
+    width: 300px;
+  }
+  .containergaleria .grid-tecnico p {
+    margin-left: 0px;
+    width: 310px;
+  }
+  #iframe_Contacto {
+    width: 480px;
+  }
+  .grid-containercontacto .grid-aparejador h3, .grid-containercontactoindex .grid-aparejador h3, .grid-containercontacto .grid-aparejadorindex h3, .grid-containercontactoindex .grid-aparejadorindex h3 {
+    font-size: inherit;
+  }
+  .grid-containercontacto .caja-datos, .grid-containercontactoindex .caja-datos {
+    width: 400px;
+  }
+  .grid-mapa {
+    width: inherit;
+  }
+  .grid-mapa img {
+    width: 300px;
+    height: 300px;
+  }
+}
+
+@media screen and (min-width: 0px) and (max-width: 320px) {
+  body {
+    width: 320px;
+  }
   header {
     width: 320px;
     height: auto;
@@ -382,6 +1131,10 @@ footer .info {
   }
   .serviciosdestacados {
     width: 320px;
+    width: 320px;
+  }
+  .serviciosdestacados .servicios-destacados {
+    width: 320px;
   }
   .serviciosdestacados h3 {
     font-size: 15px;
@@ -401,8 +1154,9 @@ footer .info {
     font-size: 15px;
     margin-bottom: 35px;
   }
-  .serviciosdestacados .card a {
-    margin-bottom: 1px;
+  .serviciosdestacados .card .card-info {
+    margin-top: 0px;
+    margin-bottom: 2px;
   }
   #aparejador {
     width: 320px;
@@ -417,8 +1171,8 @@ footer .info {
     margin-top: 10px;
   }
   #aparejador img {
-    width: 200px;
-    height: 200px;
+    width: 250px;
+    height: 230px;
   }
   #aparejador .grid-masinfo {
     margin-top: 15px;
@@ -442,31 +1196,67 @@ footer .info {
     width: 320px;
   }
   .tarifas h3 {
-    font-size: 25px;
+    font-size: 15px;
   }
   .tarifas h4 {
     font-size: 20px;
   }
+  .tarifas li {
+    font-size: 18px;
+    margin-left: -10px;
+  }
+  .tarifas h6 {
+    margin-left: 15px;
+  }
+  .tarifas ul {
+    width: 300px;
+    margin-left: -17px;
+  }
+  .tarifas p {
+    width: 200px;
+  }
   .tarifas .sobremi img {
-    width: 150px;
-    height: 150px;
+    width: 200px;
+    height: 180px;
   }
   .tarifas .sobremi p {
+    width: 250px;
     font-size: 20px;
   }
   /*servicios*/
   #iframe_servicios {
     width: 320px;
   }
+  .tarifas {
+    width: 200px;
+  }
   .gestiones {
+    width: 280px;
     -webkit-margin-start: 1%;
             margin-inline-start: 1%;
+    padding: 1px;
+  }
+  .gestiones .card {
+    margin-right: 0px;
+  }
+  .gestiones .card h3 {
+    width: 310px;
+  }
+  .gestiones .card .card-header {
+    width: 310px;
+  }
+  .gestiones .card .card-body {
+    width: inherit;
+  }
+  .testimonio {
+    margin-inline: auto;
   }
   /*galeria*/
   #iframe_galeria {
     width: 320px;
   }
   .containergaleria {
+    margin-top: 20px;
     margin: auto;
     display: -webkit-box;
     display: -ms-flexbox;
@@ -538,6 +1328,14 @@ footer .info {
   }
   #iframe_Contacto {
     width: 320px;
+  }
+  .grid-containercontacto .grid-aparejador h3, .grid-containercontactoindex .grid-aparejador h3, .grid-containercontacto .grid-aparejadorindex h3, .grid-containercontactoindex .grid-aparejadorindex h3 {
+    font-size: inherit;
+  }
+  .grid-containercontacto .caja-datos, .grid-containercontactoindex .caja-datos {
+    width: 250px;
+    margin-top: 30px;
+    margin-left: 35px;
   }
   .grid-mapa img {
     width: 200px;
